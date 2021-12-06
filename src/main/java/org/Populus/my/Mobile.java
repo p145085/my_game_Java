@@ -7,7 +7,7 @@ public class Mobile {
         String profession;
         double health;
         double fatigue;
-        double combatpower;
+        double combatpower = health * fatigue;
         double strength;
         double dexterity;
         double intelligence;
@@ -17,6 +17,24 @@ public class Mobile {
         int x;
         int y;
         int z;
+
+        public static void create_Populus(){
+//            player1.firstName = "Populus";
+//            player1.title = " the Grandmaster";
+//            player1.profession = "Legendary Blacksmith";
+//            player1.attackDamageMin = 1;
+//            player1.attackDamageMax = 5;
+//            player1.health = 100;
+//            player1.strength = 5;
+//            player1.dexterity = 5;
+//            player1.fatigue = (player1.dexterity + 1.25);
+//            player1.combatpower = player1.health * player1.fatigue;
+//            player1.intelligence = 5;
+//            player1.age = 29;
+//            player1.x = 2;
+//            player1.y = 2;
+//            player1.z = 2;
+        }
 
         public String getBasic() {
             return firstName + title + " is " + age + " years old and does " + profession + ".";

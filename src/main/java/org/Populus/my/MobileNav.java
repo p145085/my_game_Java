@@ -2,7 +2,7 @@ package org.Populus.my;
 
 public class MobileNav {
     public static void createPopulus(){
-//        Game.player1.firstName = "Populus";
+//        player1.firstName = "Populus";
 //        player1.title = " the Grandmaster";
 //        player1.profession = "Legendary Blacksmith";
 //        player1.attackDamageMin = 1;
