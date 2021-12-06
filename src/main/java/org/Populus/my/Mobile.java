@@ -17,6 +17,33 @@ public class Mobile {
         int x;
         int y;
         int z;
+
+        public populus(){
+            this.firstName = "Populus";
+            this.title = " the Grandmaster";
+            this.profession = "Legendary Blacksmith";
+            this.attackDamageMin = 1;
+            this.attackDamageMax = 5;
+            this.health = 100;
+            this.strength = 5;
+            this.dexterity = 5;
+            this.fatigue = (this.dexterity + 1.25);
+            this.combatpower = this.health * this.fatigue;
+            this.intelligence = 5;
+            this.age = 29;
+            this.x = 2;
+            this.y = 2;
+            this.z = 2;
+        }
+
+        public String getname(){
+            return firstName;
+        }
+
+        public void setName(String newname){
+            firstName = newname;
+        }
+
         String[] factions = {
                 "Shadow",
                 "Light",
@@ -93,6 +120,19 @@ public class Mobile {
         int x;
         int y;
         int z;
+        public goblin() {
+            this.name = "Goblin";
+            this.health = 100;
+            this.fatigue = 100;
+            this.combatpower = (this.health * this.fatigue);
+            this.strength = 5;
+            this.dexterity = 3;
+            this.intelligence = 1;
+            this.age = 25;
+            this.x = 1;
+            this.y = 1;
+            this.z = 1;
+        }
         public String monsterInfo() {
             return
                     "Name:" + name + "\n" +
