@@ -17,8 +17,22 @@ public class Mobile {
         int x;
         int y;
         int z;
+        String[] factions = {
+                "Shadow",
+                "Light",
+                "Fire",
+                "Water",
+                "Earth",
+                "Electric"
+        };
 
-        public static void create_Populus(){
+        public String printAvailableFactions(String[] factions){
+            for(String faction : factions){
+                System.out.println(faction);
+            }
+        }
+
+//        public static void create_Populus(){
 //            player1.firstName = "Populus";
 //            player1.title = " the Grandmaster";
 //            player1.profession = "Legendary Blacksmith";
@@ -34,7 +48,7 @@ public class Mobile {
 //            player1.x = 2;
 //            player1.y = 2;
 //            player1.z = 2;
-        }
+//        }
 
         public String getBasic() {
             return firstName + title + " is " + age + " years old and does " + profession + ".";
@@ -99,5 +113,40 @@ public class Mobile {
                     ;
         }
     }
-
+    public static class NPC {
+        String name;
+        String title;
+        String profession;
+        double health;
+        double fatigue;
+        double combatpower = health * fatigue;
+        double strength;
+        double dexterity;
+        double intelligence;
+        int attackDamageMax;
+        int attackDamageMin;
+        int age;
+        int x;
+        int y;
+        int z;
+        public String NPCInfo() {
+            return
+                    "Name:" + name + "\n" +
+                            "Title:" + title + "\n" +
+                            "Profession:" + profession + "\n" +
+                            "Age:" + age + "\n" +
+                            "Health:" + health + "\n" +
+                            "Fatigue:" + fatigue + "\n" +
+                            "Combatpower:" + combatpower + "\n" +
+                            "Strength:" + strength + "\n" +
+                            "Dexterity:" + dexterity + "\n" +
+                            "Intelligence:" + intelligence + "\n" +
+                            "AttackDamageMin:" + attackDamageMin + "\n" +
+                            "AttackDamageMax:" + attackDamageMax + "\n" +
+                            "Location X: " + x + "\n" +
+                            "Location Y: " + y + "\n" +
+                            "Location Z: " + z + "\n"
+                    ;
+        }
+    }
 }

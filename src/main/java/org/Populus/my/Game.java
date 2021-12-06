@@ -9,5 +9,7 @@ public class Game {
 
         System.out.println(player1.getBasic());
         System.out.println(player1.getCombatpower());
+        //Mobile.Player.printAvailableFactions(player1);
+        System.out.println(player1.printAvailableFactions(player1.factions));
     }
 }
