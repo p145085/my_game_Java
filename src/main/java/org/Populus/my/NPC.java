@@ -52,8 +52,7 @@ public class NPC {
     }
     public String NPCInfo() {
         return
-                "Name:" + firstName + "\n" +
-                "Title:" + title + "\n" +
+                "Name:" + firstName + title + "\n" +
                 "Profession:" + profession + "\n" +
                 "Age:" + age + "\n" +
                 "Health:" + health + "\n" +

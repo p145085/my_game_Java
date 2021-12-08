@@ -88,8 +88,7 @@ public class Player {
 //    }
 //
     public String playerInfo() {
-        return "Name:" + firstName + "\n" +
-                "Title:" + title + "\n" +
+        return "Name:" + firstName + title + "\n" +
                 "Profession:" + profession + "\n" +
                 "Gender:" + gender + "\n" +
                 "Age:" + age + "\n" +

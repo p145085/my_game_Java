@@ -46,7 +46,7 @@ public class Game {
         NPC npc1 = new NPC(
                 Names.getRandomMaleName(),
                 Titles.getRandomTitle(),
-                "Tailor",
+                Professions.getRandomProfession(),
                 "Male",
                 1,
                 5,
